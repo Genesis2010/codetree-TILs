@@ -11,4 +11,4 @@ for (index, i) in input.enumerated() {
     }
 }
 
-print(result, result/(count))
+print(result, Double(result)/Double(count))
