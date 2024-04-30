@@ -2,7 +2,7 @@ let input = readLine()!.split(separator: " ").map{Int($0)!}
 var result = 0
 var count = 0
 
-for (index, i) in input.enumerated() {
+for (_, i) in input.enumerated() {
     if i >= 250 {
         break
     } else {
@@ -11,4 +11,4 @@ for (index, i) in input.enumerated() {
     }
 }
 
-print(result, Double(result)/Double(count))
+print(result, ceil(Double(result)/Double(count)))
